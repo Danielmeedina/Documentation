@@ -1,0 +1,142 @@
+header {
+  width: 100%;
+  height: 70px;
+  background-color: var(--second-color);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav {
+  max-width: var(--width-page);
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.text {
+  padding: 5px;
+}
+
+.text,
+.container-text h2 {
+  letter-spacing: 2px;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.container-text {
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  overflow: hidden;
+}
+
+.rotate {
+  position: relative;
+  animation: change 6s ease-in-out infinite alternate;
+}
+
+.rotate:hover {
+  animation-play-state: paused;
+}
+
+.rotate span,
+.rotate h2 {
+  display: block;
+  color: var(--title-color);
+}
+.rotate a {
+  text-decoration: none;
+}
+
+@keyframes change {
+  0%,
+  5% {
+    top: -5px;
+  }
+  10%,
+  25% {
+    top: -40px;
+  }
+  30%,
+  35% {
+    top: -70px;
+  }
+  40%,
+  45% {
+    top: -40px;
+  }
+  50%,
+  100% {
+    top: -5px;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  padding-right: 15px;
+}
+
+.menu button {
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  background-color: transparent;
+  color: var(--fourth-color);
+}
+
+.menu button:hover {
+  color: var(--title-color);
+}
+
+.menu button > * {
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  header.search {
+    min-height: 100px;
+  }
+  header.nosearch {
+    min-height: 50px;
+  }
+  .grid-search {
+    display: grid;
+    gap: 5px;
+    padding: 0;
+    grid-template-areas:
+      "title menu menu menu"
+      "search search search search";
+  }
+  .flex-nosearch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .text {
+    grid-area: title;
+  }
+  .menu {
+    grid-area: menu;
+  }
+  .search-nav {
+    grid-area: search;
+    width: 100%;
+  }
+}

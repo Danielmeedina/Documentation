@@ -1,0 +1,44 @@
+.code {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+pre {
+  width: 60vw;
+  height: auto;
+  margin: 20px 0;
+  overflow: auto;
+  font-size: 15px;
+  background-color: var(--second-color);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+code {
+  overflow: auto;
+}
+
+pre::-webkit-scrollbar {
+  height: 5px;
+  background-color: transparent;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background-color: var(--title-color);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  pre {
+    width: 85vw;
+  }
+}
