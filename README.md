@@ -1,3 +1,3 @@
 ### Hi there 👋
 
-you can see the project [here](http://localhost:3000)
+you can see the project [here](https://tricksweb.netlify.app/)
