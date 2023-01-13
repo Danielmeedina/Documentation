@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Css from "./routes/Css/Css";
 import Git from "./routes/Git/Git";
+import Pruebas from "./Pruebas";
 import Home from "./routes/Home/Home";
 import Html from "./routes/Html/Html";
 import Javascript from "./routes/Js/Javascript";
@@ -34,10 +35,15 @@ const router = createBrowserRouter([
     element: <Git />,
     errorElement: <h2>Error</h2>,
   },
+  {
+    path: "/p",
+    element: <Pruebas />,
+    errorElement: <h2>Error</h2>,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </>
 );

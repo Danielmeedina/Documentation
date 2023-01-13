@@ -61,3 +61,53 @@ export const getTopics = (index) => {
   const data = info[index].topics;
   return data;
 };
+
+// const dictionary = [
+//   {
+//     en: {
+//       title: "css",
+//       topics: {
+//         formColor: {
+//           title: "Form color",
+//           text: {
+//             p: "Text english",
+//             small: "text small",
+//           },
+//         },
+//         pauseAnimation: {
+//           title: "Pause animation",
+//           text: {
+//             p: "Text english",
+//             small: "text small",
+//           },
+//         },
+//       },
+//     },
+//     es: {
+//       title: "css",
+//       topics: {
+//         formColor: {
+//           title: "Color a formularios",
+//           text: {
+//             p: "Texto en español de este articulo",
+//             small: "texto de small",
+//           },
+//         },
+//         pauseAnimation: {
+//           title: "Pausar animacion",
+//           text: {
+//             p: "Texto en español de este articulo",
+//             small: "texto de small",
+//           },
+//         },
+//       },
+//     },
+//   },
+// ];
+
+// console.log(dictionary[0].en.title);
+// console.log(dictionary[0].en.topics.formColor.title);
+// console.log(dictionary[0].en.topics.formColor.text.p);
+// console.log(dictionary[0].es.title);
+// console.log(dictionary[0].es.topics.formColor.title);
+// console.log(dictionary[0].es.topics.formColor.text.p);
