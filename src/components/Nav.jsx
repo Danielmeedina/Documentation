@@ -1,14 +1,21 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import InputNav from "./InputNav";
 import "./nav.css";
 import BtnNav from "./BtnNav";
+import ThemeContext from "../context/ThemeContext";
 
 const Nav = ({ search = true, data }) => {
   const [visible, setVisible] = useState(search);
-
+  const { theme } = useContext(ThemeContext);
   return (
-    <header className={visible ? "search" : "nosearch"}>
+    <header
+      className={
+        visible
+          ? `search ${theme ? "light" : ""}`
+          : `nosearch ${theme ? "light" : ""}`
+      }
+    >
       <nav className={visible ? "grid-search" : "flex-nosearch"}>
         <div className={visible ? "text flex1" : "text"}>
           <div className="container-text">

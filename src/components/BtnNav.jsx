@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./btnNav.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import { info } from "../services/info";
+import ThemeContext from "../context/ThemeContext";
 
 const BtnNav = () => {
   const [btnVisible, setBtnVisible] = useState(false);
+  const { theme, handleTheme } = useContext(ThemeContext);
+
   return (
     <>
+      <label className="switch">
+        <input onClick={handleTheme} checked={theme} type="checkbox" />
+        <span className="slider"></span>
+      </label>
       <button onClick={() => setBtnVisible(!btnVisible)}>
         <RxHamburgerMenu />
       </button>

@@ -1,8 +1,8 @@
 :root {
-  --main-color: rgb(22, 22, 20);
-  --second-color: rgb(39, 40, 34);
-  --title-color: #ffc928;
-  --fourth-color: #ffffff;
+  --main-color: #0f0f0f;
+  --main-color-alpha: rgb(39, 39, 39);
+  --second-color: #ffc928;
+  --letter-color: #ffff;
   --optional-color: #e6275b;
   --optional-color2: #60dafa;
   --main-letter: "Inconsolata", monospace;
@@ -15,6 +15,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   scroll-margin-top: 130px;
+  font-family: var(--main-letter);
 }
 
 *::after,
@@ -23,7 +24,6 @@
 }
 
 body {
-  font-family: var(--main-letter);
   background-color: var(--main-color);
 }
 
@@ -54,5 +54,23 @@ body {
     -moz-transform: translateY(0%);
     -ms-transform: translateY(0%);
     -o-transform: translateY(0%);
+  }
+}
+
+.light {
+  /* --main-color: #f5efe0; */
+  /* --main-color-alpha: #c8bda2; */
+  --main-color: rgb(255, 255, 255);
+  --main-color-alpha: rgb(231, 231, 231);
+  --second-color: rgb(255, 68, 0);
+  --letter-color: black;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-color: rgb(255, 255, 255);
+    --main-color-alpha: rgb(231, 231, 231);
+    --second-color: rgb(255, 68, 0);
+    --letter-color: black;
   }
 }

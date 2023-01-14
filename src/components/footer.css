@@ -2,8 +2,8 @@ footer {
   width: 100%;
   min-height: 50vh;
   position: relative;
-  background-color: var(--second-color);
-  color: var(--fourth-color);
+  background-color: var(--main-color-alpha);
+  color: var(--letter-color);
 }
 
 .shape-divider {
@@ -82,6 +82,9 @@ footer {
 
 .github {
   color: #ffffff;
+}
+.github.light {
+  color: black;
 }
 
 .mail {

@@ -1,9 +1,14 @@
+.window-home {
+  background-color: var(--main-color);
+}
+
 .home-container {
   width: 100%;
   min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--main-color);
 }
 
 .home {
@@ -27,14 +32,14 @@
   font-size: 80px;
   opacity: 0;
   font-family: "Rubik Vinyl", cursive;
-  color: var(--title-color);
+  color: var(--second-color);
   animation: 2s 2s anim-lineUp ease-out 1;
   -webkit-animation: 2s 1s anim-lineUp ease-out 1 forwards;
 }
 
 .home-text p {
   font-size: 30px;
-  color: var(--fourth-color);
+  color: var(--letter-color);
 }
 
 .home-img {
@@ -78,7 +83,7 @@
   width: 100%;
   min-height: 30vh;
   color: var(--main-color);
-  background-color: var(--title-color);
+  background-color: var(--second-color);
   text-align: center;
   clip-path: polygon(0% 50%, 8% 0, 92% 0%, 100% 50%, 92% 100%, 8% 100%);
 }
@@ -108,12 +113,13 @@
   align-items: center;
   flex-flow: column nowrap;
   text-align: center;
+  background-color: var(--main-color);
 }
 
 .cards-container h2 {
   margin-top: 50px;
   font-size: 50px;
-  color: var(--fourth-color);
+  color: var(--letter-color);
 }
 
 .cards-content {

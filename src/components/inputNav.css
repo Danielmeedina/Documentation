@@ -32,6 +32,7 @@
   color: #0d0c22;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  border: 1.5px solid black;
 }
 
 .input::-webkit-input-placeholder {
@@ -77,7 +78,7 @@ input:hover {
   left: 0;
   width: 100%;
   height: 50px;
-  background-color: var(--second-color);
+  background-color: var(--main-color-alpha);
   z-index: 999;
 }
 
@@ -96,13 +97,13 @@ input:hover {
 .box-search a {
   padding: 10px;
   display: block;
-  background-color: var(--second-color);
+  background-color: var(--main-color-alpha);
   text-transform: capitalize;
-  color: var(--fourth-color);
+  color: var(--letter-color);
   text-decoration: none;
 }
 
 .box-search a:hover {
-  background-color: var(--title-color);
-  color: var(--second-color);
+  background-color: var(--second-color);
+  color: var(--main-color-alpha);
 }

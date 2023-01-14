@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./footer.css";
 import { BsTwitter, BsLinkedin, BsGithub } from "react-icons/bs";
 import { MdMarkEmailUnread } from "react-icons/md";
+import ThemeContext from "../context/ThemeContext";
 
 const Footer = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <footer>
-      <div className="footer-content">
+    <footer className={theme ? "light" : ""}>
+      <div className={theme ? "footer-content light" : "footer-content"}>
         <div className="links-container">
           <a
             className="border-links linkedin"
@@ -17,7 +19,9 @@ const Footer = () => {
             <BsLinkedin />
           </a>
           <a
-            className="border-links github"
+            className={
+              theme ? "border-links github light " : "border-links github"
+            }
             href="https://github.com/Danielmeedina"
             target="_blank"
             rel="noopener noreferrer"
@@ -47,7 +51,7 @@ const Footer = () => {
         </p>
         <span>Copyright © 2022 Daniel Medina </span>
       </div>
-      <div className="shape-divider">
+      <div className={theme ? "shape-divider light" : "shape-divider"}>
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"

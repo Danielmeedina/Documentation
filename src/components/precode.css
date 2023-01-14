@@ -11,7 +11,7 @@ pre {
   margin: 20px 0;
   overflow: auto;
   font-size: 15px;
-  background-color: var(--second-color);
+  background-color: var(--main-color-alpha);
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -29,7 +29,7 @@ pre::-webkit-scrollbar {
 }
 
 pre::-webkit-scrollbar-thumb {
-  background-color: var(--title-color);
+  background-color: var(--second-color);
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
