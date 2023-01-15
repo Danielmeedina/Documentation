@@ -141,33 +141,3 @@ nav {
     width: 100%;
   }
 }
-
-@media screen and (max-width: 400px) {
-  .container-text h2,
-  .container-text span {
-    font-size: 21px;
-  }
-
-  @keyframes change {
-    0%,
-    5% {
-      top: 5px;
-    }
-    10%,
-    25% {
-      top: -25px;
-    }
-    30%,
-    35% {
-      top: -50px;
-    }
-    40%,
-    45% {
-      top: -25px;
-    }
-    50%,
-    100% {
-      top: 5px;
-    }
-  }
-}

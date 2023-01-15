@@ -57,15 +57,6 @@ body {
   }
 }
 
-.light {
-  /* --main-color: #f5efe0; */
-  /* --main-color-alpha: #c8bda2; */
-  --main-color: rgb(255, 255, 255);
-  --main-color-alpha: rgb(231, 231, 231);
-  --second-color: rgb(255, 68, 0);
-  --letter-color: black;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     --main-color: rgb(255, 255, 255);

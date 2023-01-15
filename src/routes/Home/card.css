@@ -1,7 +1,7 @@
 .card {
   width: 250px;
   min-height: 150px;
-  background-color: rgb(39, 40, 34);
+  background-color: var(--main-color-alpha);
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;

@@ -8,7 +8,6 @@ import Pruebas from "./Pruebas";
 import Home from "./routes/Home/Home";
 import Html from "./routes/Html/Html";
 import Javascript from "./routes/Js/Javascript";
-import { ThemeProvider } from "./context/ThemeContext";
 
 const router = createBrowserRouter([
   {
@@ -45,8 +44,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
-    <ThemeProvider>
-      <RouterProvider router={router} />
-    </ThemeProvider>
+    <RouterProvider router={router} />
   </>
 );
